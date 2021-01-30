@@ -231,7 +231,7 @@ class ApproveTransactionReview extends PureComponent {
 
 	static propTypes = {
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -279,7 +279,7 @@ class ApproveTransactionReview extends PureComponent {
 		 */
 		gasError: PropTypes.string,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string,
 		/**

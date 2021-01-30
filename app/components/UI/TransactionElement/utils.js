@@ -68,7 +68,7 @@ function decodeTransferPaymentChannel(args) {
 		renderValue: renderTotalSAI
 	};
 
-	if (primaryCurrency === 'ETH') {
+	if (primaryCurrency === 'AVAX') {
 		transactionDetails = {
 			...transactionDetails,
 			summaryAmount: renderTotalSAI,
@@ -154,7 +154,7 @@ function getTokenTransfer(args) {
 		renderTotalGas: `${renderFromWei(totalGas)} ${ticker}`,
 		renderValue: renderToken
 	};
-	if (primaryCurrency === 'ETH') {
+	if (primaryCurrency === 'AVAX') {
 		transactionDetails = {
 			...transactionDetails,
 			summaryAmount: renderToken,
@@ -221,7 +221,7 @@ function getCollectibleTransfer(args) {
 
 	let transactionDetails = { renderValue: renderCollectible };
 
-	if (primaryCurrency === 'ETH') {
+	if (primaryCurrency === 'AVAX') {
 		transactionDetails = {
 			...transactionDetails,
 			summaryAmount: renderCollectible,
@@ -316,7 +316,7 @@ function decodeIncomingTransfer(args) {
 		transactionHash,
 		transactionType
 	};
-	if (primaryCurrency === 'ETH') {
+	if (primaryCurrency === 'AVAX') {
 		transactionDetails = {
 			...transactionDetails,
 			summaryAmount: renderToken,
@@ -438,7 +438,7 @@ function decodeTransferFromTx(args) {
 		renderTotalGas: `${renderFromWei(totalGas)} ${ticker}`
 	};
 
-	if (primaryCurrency === 'ETH') {
+	if (primaryCurrency === 'AVAX') {
 		transactionDetails = {
 			...transactionDetails,
 			summaryAmount: renderCollectible,
@@ -512,7 +512,7 @@ function decodeDeploymentTx(args) {
 		renderTotalGas: `${renderFromWei(totalGas)} ${ticker}`
 	};
 
-	if (primaryCurrency === 'ETH') {
+	if (primaryCurrency === 'AVAX') {
 		transactionDetails = {
 			...transactionDetails,
 			summaryAmount: `${renderFromWei(value)} ${ticker}`,
@@ -592,7 +592,7 @@ function decodeConfirmTx(args, paymentChannelTransaction) {
 		transactionType
 	};
 
-	if (primaryCurrency === 'ETH') {
+	if (primaryCurrency === 'AVAX') {
 		transactionDetails = {
 			...transactionDetails,
 			summaryAmount: renderTotalEth,

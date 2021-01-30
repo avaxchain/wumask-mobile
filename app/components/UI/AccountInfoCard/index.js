@@ -69,7 +69,7 @@ class AccountInfoCard extends PureComponent {
 		 */
 		selectedAddress: PropTypes.string,
 		/**
-		 * A number that specifies the ETH/USD conversion rate
+		 * A number that specifies the AVAX/USD conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**

@@ -8,7 +8,7 @@ exports[`AssetOverview should render correctly 1`] = `
       "balanceFiat": 1500,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg",
       "name": "Ethereum",
-      "symbol": "ETH",
+      "symbol": "AVAX",
     }
   }
 />

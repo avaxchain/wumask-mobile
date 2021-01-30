@@ -49,7 +49,7 @@ EmptyIcon.propTypes = {
 };
 
 function TokenIcon({ symbol, icon, medium }) {
-	if (symbol === 'ETH') {
+	if (symbol === 'AVAX') {
 		return <RemoteImage fadeIn source={ethLogo} style={[styles.icon, medium && styles.iconMedium]} />;
 	} else if (icon) {
 		return <RemoteImage fadeIn source={{ uri: icon }} style={[styles.icon, medium && styles.iconMedium]} />;

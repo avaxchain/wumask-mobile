@@ -64,7 +64,7 @@ export default class AssetList extends PureComponent {
 	};
 
 	/**
-	 * Render logo according to asset. Could be ETH, Identicon or contractMap logo
+	 * Render logo according to asset. Could be AVAX, Identicon or contractMap logo
 	 *
 	 * @param {object} asset - Asset to generate the logo to render
 	 */

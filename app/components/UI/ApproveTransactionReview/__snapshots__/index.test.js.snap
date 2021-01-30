@@ -13,10 +13,10 @@ exports[`ApproveTransactionModal should render correctly 1`] = `
   activeTabUrl="https://metamask.github.io/test-dapp/"
   conversionRate={5}
   primaryCurrency="fiat"
-  providerType="ETH"
+  providerType="AVAX"
   setTransactionObject={[Function]}
   showAlert={[Function]}
-  ticker="ETH"
+  ticker="AVAX"
   tokensLength={0}
   transaction={Object {}}
 />

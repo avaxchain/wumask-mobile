@@ -96,7 +96,7 @@ class AccountSelect extends PureComponent {
 		 */
 		selectedAddress: PropTypes.string,
 		/**
-		 * ETH-to-current currency conversion rate from CurrencyRateController
+		 * AVAX-to-current currency conversion rate from CurrencyRateController
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -124,7 +124,7 @@ class AccountSelect extends PureComponent {
 		 */
 		isOpen: PropTypes.bool,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -175,7 +175,7 @@ class AccountSelect extends PureComponent {
 		if (paymentChannelTransaction) {
 			const state = PaymentChannelsClient.getState();
 			mainBalance = `${state.balance} ${strings('unit.sai')}`;
-		} else if (primaryCurrency === 'ETH') {
+		} else if (primaryCurrency === 'AVAX') {
 			mainBalance = `${renderFromWei(balance)} ${getTicker(ticker)}`;
 			secondaryBalance = weiToFiat(balance, conversionRate, currentCurrency);
 		} else {

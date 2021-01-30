@@ -84,7 +84,7 @@ describe('Addressbook Tests', () => {
 	it('should go to send view', async () => {
 		// Check that we are on the wallet screen
 		await TestHelpers.checkIfVisible('wallet-screen');
-		// Tap on ETH asset
+		// Tap on AVAX asset
 		await TestHelpers.waitAndTap('eth-logo');
 		// Check that we are on the token overview screen
 		await TestHelpers.checkIfVisible('token-asset-overview');

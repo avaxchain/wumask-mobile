@@ -90,10 +90,10 @@ describe('Request Token Flow', () => {
 		await TestHelpers.checkIfVisible('receive-request-screen');
 	});
 
-	it('should request ETH', async () => {
+	it('should request AVAX', async () => {
 		// Tap on request payment button
 		await TestHelpers.tap('request-payment-button');
-		// Tap on ETH
+		// Tap on AVAX
 		await TestHelpers.tapItemAtIndex('searched-asset-results');
 		// Make sure we're on the right screen
 		await TestHelpers.checkIfVisible('request-amount-screen');

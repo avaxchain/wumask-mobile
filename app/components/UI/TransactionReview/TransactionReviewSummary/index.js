@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 class TransactionReviewSummary extends PureComponent {
 	static propTypes = {
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -62,7 +62,7 @@ class TransactionReviewSummary extends PureComponent {
 		 */
 		actionKey: PropTypes.string,
 		/**
-		 * Transaction amount in ETH before gas
+		 * Transaction amount in AVAX before gas
 		 */
 		assetAmount: PropTypes.string,
 		/**
@@ -74,7 +74,7 @@ class TransactionReviewSummary extends PureComponent {
 		 */
 		approveTransaction: PropTypes.bool,
 		/**
-		 * ETH or fiat, depending on user setting
+		 * AVAX or fiat, depending on user setting
 		 */
 		primaryCurrency: PropTypes.string
 	};
@@ -100,10 +100,10 @@ class TransactionReviewSummary extends PureComponent {
 					) : (
 						<View>
 							<Text style={styles.summaryPrimary}>
-								{primaryCurrency === 'ETH' ? assetAmount : fiatValue}
+								{primaryCurrency === 'AVAX' ? assetAmount : fiatValue}
 							</Text>
 							<Text style={styles.summarySecondary}>
-								{primaryCurrency === 'ETH' ? fiatValue : assetAmount}
+								{primaryCurrency === 'AVAX' ? fiatValue : assetAmount}
 							</Text>
 						</View>
 					)}

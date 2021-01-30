@@ -139,7 +139,7 @@ exports[`ImportFromSeed should render correctly 1`] = `
         secureTextEntry={true}
         testID="input-seed-phrase"
         textColor="rgba(0, 0, 0, .87)"
-        tintColor="#037dd6"
+        tintColor="#e84a71"
         underlineColorAndroid="transparent"
         value=""
       />
@@ -258,7 +258,7 @@ exports[`ImportFromSeed should render correctly 1`] = `
           secureTextEntry={true}
           testID="input-password-field"
           textColor="rgba(0, 0, 0, .87)"
-          tintColor="#037dd6"
+          tintColor="#e84a71"
           underlineColorAndroid="transparent"
           value=""
         />
@@ -323,7 +323,7 @@ exports[`ImportFromSeed should render correctly 1`] = `
           secureTextEntry={true}
           testID="input-password-field-confirm"
           textColor="rgba(0, 0, 0, .87)"
-          tintColor="#037dd6"
+          tintColor="#e84a71"
           underlineColorAndroid="transparent"
           value=""
         />

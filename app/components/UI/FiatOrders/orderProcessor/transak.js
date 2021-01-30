@@ -224,7 +224,7 @@ export const useTransakFlowURL = address => {
 		() =>
 			qs.stringify({
 				apiKey: TRANSAK_API_KEY,
-				cryptoCurrencyCode: 'ETH',
+				cryptoCurrencyCode: 'AVAX',
 				networks: 'ethereum',
 				themeColor: '037dd6',
 				walletAddress: address,

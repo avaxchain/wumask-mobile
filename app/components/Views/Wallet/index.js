@@ -56,7 +56,7 @@ class Wallet extends PureComponent {
 		 */
 		accounts: PropTypes.object,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**

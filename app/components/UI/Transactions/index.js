@@ -90,7 +90,7 @@ class Transactions extends PureComponent {
 		 */
 		selectedAddress: PropTypes.string,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**

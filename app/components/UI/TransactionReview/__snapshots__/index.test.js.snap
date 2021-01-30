@@ -12,7 +12,7 @@ exports[`TransactionReview should render correctly 1`] = `
     />
     <TransactionReviewSummary
       actionKey="Confirm"
-      primaryCurrency="ETH"
+      primaryCurrency="AVAX"
     />
     <View
       style={

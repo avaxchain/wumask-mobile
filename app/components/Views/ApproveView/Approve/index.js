@@ -195,7 +195,7 @@ class Approve extends PureComponent {
 					this.props.toggleApproveModal();
 					NotificationManager.watchSubmittedTransaction({
 						...transactionMeta,
-						assetType: 'ETH'
+						assetType: 'AVAX'
 					});
 				} else {
 					throw transactionMeta.error;

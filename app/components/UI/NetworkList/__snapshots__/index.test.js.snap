@@ -216,7 +216,7 @@ exports[`NetworkList should render correctly 1`] = `
             }
           }
         >
-          Ropsten Test Network
+          Avalanche Test Network
         </Text>
       </View>
     </TouchableOpacity>
@@ -488,7 +488,7 @@ exports[`NetworkList should render correctly 1`] = `
       <Text
         style={
           Object {
-            "color": "#037dd6",
+            "color": "#e84a71",
             "fontFamily": "EuclidCircularB-Regular",
             "fontSize": 16,
             "fontWeight": "400",

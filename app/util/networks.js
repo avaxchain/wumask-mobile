@@ -1,7 +1,7 @@
 import { colors } from '../styles/common';
 import URL from 'url-parse';
 import AppConstants from '../core/AppConstants';
-import { MAINNET, ROPSTEN, KOVAN, RINKEBY, GOERLI, RPC } from '../../app/constants/network';
+import { MAINNET, AVALANCHE, KOVAN, RINKEBY, GOERLI, RPC } from '../../app/constants/network';
 
 /**
  * List of the supported networks
@@ -18,11 +18,11 @@ const NetworkList = {
 		chainId: 1,
 		color: '#3cc29e'
 	},
-	[ROPSTEN]: {
-		name: 'Ropsten Test Network',
-		shortName: 'Ropsten',
-		networkId: 3,
-		chainId: 3,
+	[AVALANCHE]: {
+		name: 'Avalanche C-Chain',
+		shortName: 'Avalanche',
+		networkId: 1,
+		chainId: 43113,
 		color: '#ff4a8d'
 	},
 	[KOVAN]: {

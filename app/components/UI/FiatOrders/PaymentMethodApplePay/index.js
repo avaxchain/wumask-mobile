@@ -177,7 +177,7 @@ function PaymentMethodApplePay({
 			NotificationManager.showSimpleNotification({
 				duration: 5000,
 				title: strings('fiat_on_ramp.notifications.purchase_failed_title', {
-					currency: 'ETH'
+					currency: 'AVAX'
 				}),
 				description: `${error instanceof WyreException ? 'Wyre: ' : ''}${error.message}`,
 				status: 'error'
@@ -220,12 +220,12 @@ function PaymentMethodApplePay({
 						(rates ? (
 							<Text>
 								{roundAmount === '0' ? (
-									`$${rates.USD.toFixed(2)} ≈ 1 ETH`
+									`$${rates.USD.toFixed(2)} ≈ 1 AVAX`
 								) : (
 									<>
 										{strings('fiat_on_ramp.wyre_estimated', {
-											currency: 'ETH',
-											amount: (amount * rates.ETH).toFixed(5)
+											currency: 'AVAX',
+											amount: (amount * rates.AVAX).toFixed(5)
 										})}
 									</>
 								)}

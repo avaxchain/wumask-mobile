@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
 
 function SwapsAmountView({ tokens, accounts, selectedAddress, balances }) {
 	const navigation = useContext(NavigationContext);
-	const initialSource = navigation.getParam('sourceToken', 'ETH');
+	const initialSource = navigation.getParam('sourceToken', 'AVAX');
 	const [amount, setAmount] = useState('0');
 	const amountBigNumber = useMemo(() => new BigNumber(amount), [amount]);
 	const [isInitialLoadingTokens, setInitialLoadingTokens] = useState(false);
@@ -143,7 +143,7 @@ function SwapsAmountView({ tokens, accounts, selectedAddress, balances }) {
 		if (!sourceToken) {
 			return null;
 		}
-		if (sourceToken.symbol === 'ETH') {
+		if (sourceToken.symbol === 'AVAX') {
 			return renderFromWei(accounts[selectedAddress] && accounts[selectedAddress].balance);
 		}
 		const tokenAddress = toChecksumAddress(sourceToken.address);

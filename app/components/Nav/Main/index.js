@@ -752,7 +752,7 @@ Main.propTypes = {
 	 */
 	lockTime: PropTypes.number,
 	/**
-	 * Action that sets an ETH transaction
+	 * Action that sets an AVAX transaction
 	 */
 	setEtherTransaction: PropTypes.func,
 	/**

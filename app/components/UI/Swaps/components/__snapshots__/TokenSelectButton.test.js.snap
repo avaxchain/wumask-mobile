@@ -80,7 +80,7 @@ exports[`TokenSelectButton component should Render correctly 2`] = `
       }
     >
       <TokenIcon
-        symbol="ETH"
+        symbol="AVAX"
       />
     </View>
     <Text
@@ -97,7 +97,7 @@ exports[`TokenSelectButton component should Render correctly 2`] = `
       strikethrough={false}
       upper={false}
     >
-      ETH
+      AVAX
     </Text>
     <Icon
       allowFontScaling={false}

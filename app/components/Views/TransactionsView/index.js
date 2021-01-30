@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 class TransactionsView extends PureComponent {
 	static propTypes = {
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**

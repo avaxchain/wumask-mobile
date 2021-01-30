@@ -12,7 +12,7 @@ describe('Confirm', () => {
 					NetworkController: {
 						network: '1',
 						provider: {
-							ticker: 'ETH',
+							ticker: 'AVAX',
 							type: 'mainnet'
 						}
 					},

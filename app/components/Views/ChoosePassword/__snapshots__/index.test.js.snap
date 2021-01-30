@@ -336,7 +336,7 @@ exports[`ChoosePassword should render correctly 1`] = `
             testID="password-understand-box"
             tintColors={
               Object {
-                "true": "#037dd6",
+                "true": "#e84a71",
               }
             }
             value={false}
@@ -361,8 +361,8 @@ exports[`ChoosePassword should render correctly 1`] = `
               onPress={[Function]}
               style={
                 Object {
-                  "color": "#037dd6",
-                  "textDecorationColor": "#037dd6",
+                  "color": "#e84a71",
+                  "textDecorationColor": "#e84a71",
                   "textDecorationLine": "underline",
                 }
               }

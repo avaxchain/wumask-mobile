@@ -21,6 +21,6 @@ exports[`PaymentChannelDeposit should render correctly 1`] = `
   }
   primaryCurrency="usd"
   selectedAddress="0x1"
-  ticker="ETH"
+  ticker="AVAX"
 />
 `;

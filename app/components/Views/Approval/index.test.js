@@ -2,7 +2,7 @@ import React from 'react';
 import Approval from './';
 import configureMockStore from 'redux-mock-store';
 import { shallow } from 'enzyme';
-import { ROPSTEN } from '../../../constants/network';
+import { AVALANCHE } from '../../../constants/network';
 
 const mockStore = configureMockStore();
 
@@ -16,7 +16,7 @@ describe('Approval', () => {
 				gas: '',
 				gasPrice: '',
 				to: '0x2',
-				selectedAsset: { symbol: 'ETH' },
+				selectedAsset: { symbol: 'AVAXs' },
 				assetType: undefined
 			},
 			engine: {
@@ -29,7 +29,7 @@ describe('Approval', () => {
 					},
 					NetworkController: {
 						provider: {
-							type: ROPSTEN
+							type: AVALANCHE
 						}
 					}
 				}

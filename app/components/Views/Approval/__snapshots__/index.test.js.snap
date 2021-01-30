@@ -60,7 +60,7 @@ exports[`Approval should render correctly 1`] = `
         "gas": "",
         "gasPrice": "",
         "selectedAsset": Object {
-          "symbol": "ETH",
+          "symbol": "AVAX",
         },
         "to": "0x2",
         "value": "",

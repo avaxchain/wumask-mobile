@@ -25,7 +25,7 @@ export function generateUniversalLinkRequest(ethereum_link) {
 }
 
 /**
- * Generate ETH payment request link
+ * Generate AVAX payment request link
  *
  * @param {string} receiverAddress - Receiver address
  * @param {string} value - Value to request, in float number

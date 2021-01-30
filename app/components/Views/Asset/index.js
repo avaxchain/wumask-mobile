@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 });
 
 /**
- * View that displays a specific asset (Token or ETH)
+ * View that displays a specific asset (Token or AVAX)
  * including the overview (Amount, Balance, Symbol, Logo)
  * and also the transaction list
  */
@@ -40,7 +40,7 @@ class Asset extends PureComponent {
 		*/
 		navigation: PropTypes.object,
 		/**
-		/* conversion rate of ETH - FIAT
+		/* conversion rate of AVAX - FIAT
 		*/
 		conversionRate: PropTypes.any,
 		/**
@@ -96,7 +96,7 @@ class Asset extends PureComponent {
 		});
 		this.navSymbol = this.props.navigation.getParam('symbol', '').toLowerCase();
 		this.navAddress = this.props.navigation.getParam('address', '').toLowerCase();
-		if (this.navSymbol.toUpperCase() !== 'ETH' && this.navAddress !== '') {
+		if (this.navSymbol.toUpperCase() !== 'AVAX' && this.navAddress !== '') {
 			this.filter = this.noEthFilter;
 		} else {
 			this.filter = this.ethFilter;

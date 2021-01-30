@@ -254,11 +254,11 @@ class Send extends PureComponent {
 		switch (action) {
 			case 'send-eth':
 				newTxMeta = {
-					symbol: 'ETH',
-					assetType: 'ETH',
+					symbol: 'AVAX',
+					assetType: 'AVAX',
 					type: 'ETHER_TRANSACTION',
 					paymentRequest: true,
-					selectedAsset: { symbol: 'ETH', isETH: true },
+					selectedAsset: { symbol: 'AVAX', isETH: true },
 					...this.handleNewTxMetaRecipient(target_address)
 				};
 				if (parameters && parameters.value) {
@@ -344,7 +344,7 @@ class Send extends PureComponent {
 		const newNetworkType = getNetworkTypeById(chainId);
 		if (newNetworkType && networkType !== newNetworkType) {
 			const { NetworkController, CurrencyRateController } = Engine.context;
-			CurrencyRateController.configure({ nativeCurrency: 'ETH' });
+			CurrencyRateController.configure({ nativeCurrency: 'AVAX' });
 			NetworkController.setProviderType(newNetworkType);
 			this.props.showAlert({
 				isVisible: true,
@@ -475,7 +475,7 @@ class Send extends PureComponent {
 		} = this.props;
 		let { transaction } = this.props;
 		try {
-			if (assetType === 'ETH') {
+			if (assetType === 'AVAX') {
 				transaction = this.prepareTransaction(transaction);
 			} else {
 				transaction = this.prepareAssetTransaction(transaction, selectedAsset);
@@ -490,7 +490,7 @@ class Send extends PureComponent {
 			// Add to the AddressBook if it's an unkonwn address
 			let checksummedAddress = null;
 
-			if (assetType === 'ETH') {
+			if (assetType === 'AVAX') {
 				checksummedAddress = toChecksumAddress(transactionMeta.transaction.to);
 			} else if (assetType === 'ERC20') {
 				try {
@@ -596,7 +596,7 @@ class Send extends PureComponent {
 		return {
 			view: SEND,
 			network: networkType,
-			activeCurrency: (selectedAsset && (selectedAsset.symbol || selectedAsset.contractName)) || 'ETH',
+			activeCurrency: (selectedAsset && (selectedAsset.symbol || selectedAsset.contractName)) || 'AVAX',
 			assetType
 		};
 	};

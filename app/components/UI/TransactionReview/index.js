@@ -105,7 +105,7 @@ class TransactionReview extends PureComponent {
 		 */
 		browser: PropTypes.object,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -125,7 +125,7 @@ class TransactionReview extends PureComponent {
 		 */
 		ticker: PropTypes.string,
 		/**
-		 * ETH or fiat, depending on user setting
+		 * AVAX or fiat, depending on user setting
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -206,7 +206,7 @@ class TransactionReview extends PureComponent {
 			ticker
 		} = this.props;
 		const values = {
-			ETH: () => {
+			AVAX: () => {
 				const assetAmount = `${renderFromWei(value)} ${getTicker(ticker)}`;
 				const conversionRate = this.props.conversionRate;
 				const fiatValue = weiToFiat(value, conversionRate, currentCurrency);

@@ -107,7 +107,7 @@ const NAMES = {
 	DAPP_APPROVE_SCREEN_EDIT_FEE: 'Edit tx fee',
 	DAPP_APPROVE_SCREEN_VIEW_DETAILS: 'View tx details',
 	// Fiat Orders
-	WALLET_BUY_ETH: 'Buy ETH',
+	WALLET_BUY_ETH: 'Buy AVAX',
 	PAYMENTS_SELECTS_DEBIT_OR_ACH: 'Selects debit card or bank account as payment method',
 	PAYMENTS_SELECTS_APPLE_PAY: 'Selects Apple Pay as payment method'
 };
@@ -149,7 +149,7 @@ const ACTIONS = {
 	SEND_FLOW: 'Send Flow',
 	// Dapp Interactions
 	APPROVE_REQUEST: 'Approve Request',
-	BUY_ETH: 'Buy ETH',
+	BUY_ETH: 'Buy AVAX',
 	SELECTS_DEBIT_OR_ACH: 'Selects Debit or ACH',
 	SELECTS_APPLE_PAY: 'Selects Apple Pay'
 };

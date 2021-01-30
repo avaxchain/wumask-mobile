@@ -333,20 +333,20 @@ export async function getTransactionReviewActionKey(transaction) {
 }
 
 /**
- * Returns corresponding ticker, defined or ETH
+ * Returns corresponding ticker, defined or AVAX
  *
  * @param {string} - Ticker
- * @returns {string} - Corresponding ticker or ETH
+ * @returns {string} - Corresponding ticker or AVAX
  */
 export function getTicker(ticker) {
 	return ticker || strings('unit.eth');
 }
 
 /**
- * Construct ETH asset object
+ * Construct AVAX asset object
  *
  * @param {string} ticker - Ticker
- * @returns {object} - ETH object
+ * @returns {object} - AVAX object
  */
 export function getEther(ticker) {
 	return {

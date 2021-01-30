@@ -30,14 +30,14 @@ describe('TransactionReview', () => {
 					},
 					NetworkController: {
 						provider: {
-							ticker: 'ETH'
+							ticker: 'AVAX'
 						}
 					}
 				}
 			},
 			settings: {
 				showHexData: true,
-				primaryCurrency: 'ETH'
+				primaryCurrency: 'AVAX'
 			},
 			transaction: {
 				value: '',

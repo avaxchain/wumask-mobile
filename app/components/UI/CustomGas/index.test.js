@@ -25,7 +25,7 @@ describe('CustomGas', () => {
 					},
 					NetworkController: {
 						provider: {
-							ticker: 'ETH'
+							ticker: 'AVAX'
 						}
 					}
 				}

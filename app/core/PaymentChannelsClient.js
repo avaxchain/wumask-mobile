@@ -95,8 +95,8 @@ class PaymentChannelsClient {
 		let hubUrl;
 		const ethprovider = new EthQuery(infuraProvider);
 		switch (type) {
-			case RINKEBY:
-				hubUrl = `https://rinkeby.${PUBLIC_URL}/api/hub`;
+			case AVALANCHE:
+				hubUrl = `https://api.avax.network/ext/bc/C/rpc`;
 				break;
 			case MAINNET:
 				hubUrl = `https://${PUBLIC_URL}/api/hub`;
@@ -539,34 +539,34 @@ const instance = {
 	},
 	/**
 	 * Function that returns the value of the minimum deposit
-	 * based on the current ETH conversion rate
+	 * based on the current AVAX conversion rate
 	 */
 	getMinimumDepositFiat: () => {
 		if (client.state) {
 			const { exchangeRate } = client.state;
 			if (exchangeRate) {
-				const ETH = parseFloat(exchangeRate);
-				return (ETH * MIN_DEPOSIT_ETH).toFixed(2).toString();
+				const AVAX = parseFloat(exchangeRate);
+				return (AVAX * MIN_DEPOSIT_ETH).toFixed(2).toString();
 			}
 		}
 		return undefined;
 	},
 	/**
 	 * Function that returns the value of the maximum deposit
-	 * based on the current ETH conversion rate
+	 * based on the current AVAX conversion rate
 	 */
 	getMaximumDepositEth: () => {
 		if (client.state) {
 			const { exchangeRate } = client.state;
 			if (exchangeRate) {
-				const ETH = parseFloat(exchangeRate);
-				return (MAX_DEPOSIT_TOKEN / ETH).toFixed(2).toString();
+				const AVAX = parseFloat(exchangeRate);
+				return (MAX_DEPOSIT_TOKEN / AVAX).toFixed(2).toString();
 			}
 		}
 		return undefined;
 	},
 	/**
-	 *	Returns the current exchange rate for SAI / ETH
+	 *	Returns the current exchange rate for SAI / AVAX
 	 */
 	getExchangeRate: () => (client && client.state && client.state.exchangeRate) || 0,
 	/**
@@ -590,7 +590,7 @@ const instance = {
 		return hasBalance;
 	},
 	/**
-	 *	Minimum deposit amount in ETH
+	 *	Minimum deposit amount in AVAX
 	 */
 	MIN_DEPOSIT_ETH,
 	/**

@@ -31,7 +31,7 @@ const getAssetType = selectedAsset => {
 		if (selectedAsset.tokenId) {
 			assetType = 'ERC721';
 		} else if (selectedAsset.isETH) {
-			assetType = 'ETH';
+			assetType = 'AVAX';
 		} else {
 			assetType = 'ERC20';
 		}
@@ -121,9 +121,9 @@ const transactionReducer = (state = initialState, action) => {
 		case 'SET_ETHER_TRANSACTION':
 			return {
 				...state,
-				symbol: 'ETH',
-				assetType: 'ETH',
-				selectedAsset: { isETH: true, symbol: 'ETH' },
+				symbol: 'AVAX',
+				assetType: 'AVAX',
+				selectedAsset: { isETH: true, symbol: 'AVAX' },
 				type: 'ETHER_TRANSACTION',
 				...getTxMeta(action.transaction),
 				transaction: getTxData(action.transaction)

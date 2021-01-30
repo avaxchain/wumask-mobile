@@ -430,7 +430,7 @@ exports[`GeneralSettings should render correctly 1`] = `
           }
         }
       >
-        Select Native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency.
+        Select Native to prioritize displaying values in the native currency of the chain (e.g. AVAX). Select Fiat to prioritize displaying values in your selected fiat currency.
       </Text>
       <View
         style={
@@ -645,7 +645,7 @@ exports[`GeneralSettings should render correctly 1`] = `
                   "width": 48,
                 },
                 Object {
-                  "borderColor": "#037dd6",
+                  "borderColor": "#e84a71",
                 },
               ]
             }

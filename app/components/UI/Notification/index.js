@@ -138,7 +138,7 @@ class Notification extends PureComponent {
 		// eslint-disable-next-line react/no-unused-prop-types
 		ticker: PropTypes.string,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		// eslint-disable-next-line react/no-unused-prop-types
 		conversionRate: PropTypes.number,
@@ -172,7 +172,7 @@ class Notification extends PureComponent {
 		 */
 		status: PropTypes.string,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		// eslint-disable-next-line react/no-unused-prop-types
 		primaryCurrency: PropTypes.string,

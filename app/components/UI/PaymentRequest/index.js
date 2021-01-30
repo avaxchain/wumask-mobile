@@ -203,7 +203,7 @@ const fuse = new Fuse(contractList, {
 const ethLogo = require('../../../images/eth-logo.png'); // eslint-disable-line
 const defaultEth = [
 	{
-		symbol: 'ETH',
+		symbol: 'AVAX',
 		name: 'Ether',
 		logo: ethLogo,
 		isETH: true
@@ -237,7 +237,7 @@ class PaymentRequest extends PureComponent {
 		 */
 		navigation: PropTypes.object,
 		/**
-		 * ETH-to-current currency conversion rate from CurrencyRateController
+		 * AVAX-to-current currency conversion rate from CurrencyRateController
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -249,7 +249,7 @@ class PaymentRequest extends PureComponent {
 		 */
 		contractExchangeRates: PropTypes.object,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -429,7 +429,7 @@ class PaymentRequest extends PureComponent {
 	};
 
 	/**
-	 * Handles payment request parameters for ETH as primaryCurrency
+	 * Handles payment request parameters for AVAX as primaryCurrency
 	 *
 	 * @param {string} amount - String containing amount number from input, as token value
 	 * @returns {object} - Object containing respective symbol, secondaryAmount and cryptoAmount according to amount and selectedAsset
@@ -443,7 +443,7 @@ class PaymentRequest extends PureComponent {
 		const cryptoAmount = amount;
 		const exchangeRate = selectedAsset && selectedAsset.address && contractExchangeRates[selectedAsset.address];
 
-		if (selectedAsset.symbol !== 'ETH') {
+		if (selectedAsset.symbol !== 'AVAX') {
 			secondaryAmount = exchangeRate
 				? balanceToFiat(undefAmount, conversionRate, exchangeRate, currentCurrency)
 				: undefined;
@@ -466,7 +466,7 @@ class PaymentRequest extends PureComponent {
 		const exchangeRate = selectedAsset && selectedAsset.address && contractExchangeRates[selectedAsset.address];
 		const undefAmount = (isDecimal(amount) && amount) || 0;
 		let secondaryAmount, cryptoAmount;
-		if (selectedAsset.symbol !== 'ETH' && (exchangeRate && exchangeRate !== 0)) {
+		if (selectedAsset.symbol !== 'AVAX' && (exchangeRate && exchangeRate !== 0)) {
 			const secondaryMinimalUnit = fiatNumberToTokenMinimalUnit(
 				undefAmount,
 				conversionRate,
@@ -496,7 +496,7 @@ class PaymentRequest extends PureComponent {
 		let res;
 		// If primary currency is not crypo we need to know if there are conversion and exchange rates to handle0,
 		// fiat conversion for the payment request
-		if (internalPrimaryCurrency !== 'ETH' && conversionRate && (exchangeRate || selectedAsset.isETH)) {
+		if (internalPrimaryCurrency !== 'AVAX' && conversionRate && (exchangeRate || selectedAsset.isETH)) {
 			res = this.handleFiatPrimaryCurrency(amount && amount.replace(',', '.'));
 		} else {
 			res = this.handleETHPrimaryCurrency(amount && amount.replace(',', '.'));
@@ -515,8 +515,8 @@ class PaymentRequest extends PureComponent {
 	switchPrimaryCurrency = async () => {
 		const { internalPrimaryCurrency, secondaryAmount } = this.state;
 		const primarycurrencies = {
-			ETH: 'Fiat',
-			Fiat: 'ETH'
+			AVAX: 'Fiat',
+			Fiat: 'AVAX'
 		};
 		await this.setState({ internalPrimaryCurrency: primarycurrencies[internalPrimaryCurrency] });
 		this.updateAmount(secondaryAmount.split(' ')[0]);
@@ -580,7 +580,7 @@ class PaymentRequest extends PureComponent {
 		let switchable = true;
 		if (!conversionRate) {
 			switchable = false;
-		} else if (selectedAsset.symbol !== 'ETH' && !exchangeRate) {
+		} else if (selectedAsset.symbol !== 'AVAX' && !exchangeRate) {
 			switchable = false;
 		}
 		return (
@@ -593,7 +593,7 @@ class PaymentRequest extends PureComponent {
 						<View style={styles.ethContainer}>
 							<View style={styles.amounts}>
 								<View style={styles.split}>
-									{internalPrimaryCurrency !== 'ETH' && (
+									{internalPrimaryCurrency !== 'AVAX' && (
 										<Text style={styles.currencySymbol}>{currencySymbol}</Text>
 									)}
 									<TextInput
@@ -616,7 +616,7 @@ class PaymentRequest extends PureComponent {
 									</Text>
 								</View>
 								<View style={styles.secondaryAmount}>
-									{internalPrimaryCurrency === 'ETH' && (
+									{internalPrimaryCurrency === 'AVAX' && (
 										<Text style={styles.currencySymbolSmall}>{currencySymbol}</Text>
 									)}
 									{secondaryAmount && (

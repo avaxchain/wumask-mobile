@@ -43,7 +43,7 @@ export const migrations = {
 		if (!isInitialNetwork && isCustomRpcWithInvalidChainId) {
 			// If the current network does not have a chainId, switch to testnet.
 			state.engine.backgroundState.NetworkController.provider = {
-				ticker: 'ETH',
+				ticker: 'AVAX',
 				type: 'rinkeby'
 			};
 		}
@@ -66,7 +66,7 @@ export const migrations = {
 		if (hasInvalidChainId) {
 			// If the current network does not have a chainId, switch to testnet.
 			state.engine.backgroundState.NetworkController.provider = {
-				ticker: 'ETH',
+				ticker: 'AVAX',
 				type: 'rinkeby',
 				chainId: NetworksChainId.rinkeby
 			};

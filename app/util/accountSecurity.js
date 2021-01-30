@@ -23,7 +23,7 @@ export default async function findFirstIncomingTransaction(networkType, selected
 		);
 		if (txs.length > 0) {
 			return {
-				asset: 'ETH',
+				asset: 'AVAX',
 				from: toChecksumAddress(txs[0].transaction.from),
 				amount: `${renderFromWei(hexToBN(txs[0].transaction.value))} ${strings('unit.eth')}`
 			};

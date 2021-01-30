@@ -116,7 +116,7 @@ class TransactionEditor extends PureComponent {
 		if (transaction && transaction.value) {
 			this.handleUpdateAmount(transaction.value, true);
 		}
-		if (transaction && transaction.assetType === 'ETH') {
+		if (transaction && transaction.assetType === 'AVAX') {
 			this.handleUpdateReadableValue(fromWei(transaction.value));
 		}
 		if (transaction && transaction.data) {
@@ -195,8 +195,8 @@ class TransactionEditor extends PureComponent {
 		const {
 			transaction: { to, data, assetType, gas: gasLimit }
 		} = this.props;
-		// If ETH transaction, there is no need to generate new data
-		if (assetType === 'ETH') {
+		// If AVAX transaction, there is no need to generate new data
+		if (assetType === 'AVAX') {
 			const { gas } = mounting ? { gas: gasLimit } : await this.estimateGas({ amount, data, to });
 			this.props.setTransactionObject({ value: amount, to, gas: hexToBN(gas) });
 		}
@@ -248,8 +248,8 @@ class TransactionEditor extends PureComponent {
 		const {
 			transaction: { data, assetType }
 		} = this.props;
-		// If ETH transaction, there is no need to generate new data
-		if (assetType === 'ETH') {
+		// If AVAX transaction, there is no need to generate new data
+		if (assetType === 'AVAX') {
 			const { gas } = await this.estimateGas({ data, to });
 			this.props.setTransactionObject({ to, gas: hexToBN(gas), ensRecipient });
 		}
@@ -274,7 +274,7 @@ class TransactionEditor extends PureComponent {
 			this.props.setTransactionObject({
 				value: undefined,
 				data: undefined,
-				selectedAsset: { symbol: 'ETH', isETH: true },
+				selectedAsset: { symbol: 'AVAX', isETH: true },
 				gas: hexToBN(gas)
 			});
 		} else {
@@ -358,7 +358,7 @@ class TransactionEditor extends PureComponent {
 			return this.validatePaymentChannelAmount(allowEmpty);
 		}
 		const validations = {
-			ETH: () => this.validateEtherAmount(allowEmpty),
+			AVAX: () => this.validateEtherAmount(allowEmpty),
 			ERC20: async () => await this.validateTokenAmount(allowEmpty),
 			ERC721: async () => await this.validateCollectibleOwnership()
 		};

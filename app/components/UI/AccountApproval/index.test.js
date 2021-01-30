@@ -2,7 +2,7 @@ import React from 'react';
 import AccountApproval from './';
 import { shallow } from 'enzyme';
 import configureMockStore from 'redux-mock-store';
-import { ROPSTEN } from '../../../constants/network';
+import { AVALANCHE } from '../../../constants/network';
 
 const mockStore = configureMockStore();
 
@@ -16,7 +16,7 @@ describe('AccountApproval', () => {
 					},
 					NetworkController: {
 						provider: {
-							type: ROPSTEN
+							type: AVALANCHE
 						}
 					},
 					AssetsController: {

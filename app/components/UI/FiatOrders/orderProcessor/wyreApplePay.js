@@ -58,7 +58,7 @@ export const WYRE_ERROR_TYPE = {
  * @property {string?} transferId  Transfer id or null eg: "TF_MDA6MAY848D",
  * @property {number} sourceAmount Fiat amount of order eg: 1.84,
  * @property {string} sourceCurrency Fiat currency of order eg: "USD",
- * @property {string} destCurrency Crypto currency eg: "ETH",
+ * @property {string} destCurrency Crypto currency eg: "AVAX",
  * @property {string} dest Destination of transfer eg: "ethereum:0x9E01E0E60dF079136a7a1d4ed97d709D5Fe3e341",
  * @property {string} walletType  Wallet type eg: "APPLE_PAY",
  * @property {string} email Customer email eg: "user@company.com",
@@ -85,10 +85,10 @@ export const WYRE_ORDER_STATES = {
  * @property {string} feeCurrency Fee currency "USD"
  * @property {number} fee Fee
  * @property {object} fees Fees object
- * @property {number} fees.ETH Fees in ETH
+ * @property {number} fees.AVAX Fees in AVAX
  * @property {number} fees.USD Fees in USD
  * @property {string} sourceCurrency Source currency eg: "USD"
- * @property {string} destCurrency eg: "ETH"
+ * @property {string} destCurrency eg: "AVAX"
  * @property {number} sourceAmount Source amount eg: 1.84
  * @property {number} destAmount Dest amount eg: 0.001985533306564713
  * @property {string} destSrn Destination address eg: "ethereum:0x9E01E0E60dF079136a7a1d4ed97d709D5Fe3e341"
@@ -262,7 +262,7 @@ export async function processWyreApplePayOrder(order) {
 //* Payment Request */
 
 const USD_CURRENCY_CODE = 'USD';
-const ETH_CURRENCY_CODE = 'ETH';
+const ETH_CURRENCY_CODE = 'AVAX';
 
 const ABORTED = 'ABORTED';
 

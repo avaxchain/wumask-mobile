@@ -173,7 +173,7 @@ exports[`ReceiveRequest should render correctly 1`] = `
         }
         type="blue"
       >
-        Buy ETH
+        Buy AVAX
       </StyledButton>
       <StyledButton
         containerStyle={

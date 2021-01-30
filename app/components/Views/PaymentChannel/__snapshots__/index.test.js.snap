@@ -6,12 +6,12 @@ exports[`PaymentChannel should render correctly 1`] = `
   conversionRate={100}
   currentCurrency="USD"
   internalTransactions={Array []}
-  nativeCurrency="ETH"
+  nativeCurrency="AVAX"
   paymentChannelsEnabled={true}
   provider={
     Object {
-      "ticker": "ETH",
-      "type": "ropsten",
+      "ticker": "AVAX",
+      "type": "avalanche",
     }
   }
   selectedAddress="0x1"

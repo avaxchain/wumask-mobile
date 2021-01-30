@@ -56,8 +56,8 @@ describe('Wallet Tests', () => {
 		await TestHelpers.waitAndTap('onboarding-wizard-back-button');
 		// Check that the onboarding wizard is gone
 		await TestHelpers.checkIfNotVisible('onboarding-wizard-step1-view');
-		// Ensure ETH Value is correct
-		await TestHelpers.checkIfElementHasString('balance', '0 ETH');
+		// Ensure AVAX Value is correct
+		await TestHelpers.checkIfElementHasString('balance', '0 AVAX');
 	});
 
 	it('should be able to add new accounts', async () => {
@@ -309,7 +309,7 @@ describe('Wallet Tests', () => {
 	it('should input a valid address', async () => {
 		// Check that we are on the wallet screen
 		await TestHelpers.checkIfVisible('wallet-screen');
-		// Tap on ETH asset
+		// Tap on AVAX asset
 		await TestHelpers.waitAndTap('eth-logo');
 		// Check that we are on the token overview screen
 		await TestHelpers.checkIfVisible('token-asset-overview');
@@ -344,9 +344,9 @@ describe('Wallet Tests', () => {
 		await TestHelpers.checkIfVisible('txn-confirm-screen');
 	});
 
-	it('should send ETH to Account 2', async () => {
+	it('should send AVAX to Account 2', async () => {
 		// Check that the amount is correct
-		await TestHelpers.checkIfHasText('confirm-txn-amount', '0.00004 ETH');
+		await TestHelpers.checkIfHasText('confirm-txn-amount', '0.00004 AVAX');
 		// Tap on the Send CTA
 		await TestHelpers.tap('txn-confirm-send-button');
 		// Check that we are on the token overview screen

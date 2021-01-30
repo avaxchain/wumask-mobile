@@ -313,7 +313,7 @@ class Amount extends PureComponent {
 		 */
 		contractBalances: PropTypes.object,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -349,7 +349,7 @@ class Amount extends PureComponent {
 		 */
 		prepareTransaction: PropTypes.func,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -380,7 +380,7 @@ class Amount extends PureComponent {
 		inputValueConversion: undefined,
 		renderableInputValueConversion: undefined,
 		assetsModalVisible: false,
-		internalPrimaryCurrencyIsCrypto: this.props.primaryCurrency === 'ETH',
+		internalPrimaryCurrencyIsCrypto: this.props.primaryCurrency === 'AVAX',
 		estimatedTotalGas: undefined,
 		hasExchangeRate: false
 	};

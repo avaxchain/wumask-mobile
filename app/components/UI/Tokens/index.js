@@ -108,7 +108,7 @@ class Tokens extends PureComponent {
 		 */
 		tokens: PropTypes.array,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -128,7 +128,7 @@ class Tokens extends PureComponent {
 		 */
 		transactions: PropTypes.array,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -173,7 +173,7 @@ class Tokens extends PureComponent {
 
 		// render balances according to primary currency
 		let mainBalance, secondaryBalance;
-		if (primaryCurrency === 'ETH') {
+		if (primaryCurrency === 'AVAX') {
 			mainBalance = balanceValue;
 			secondaryBalance = balanceFiat;
 		} else {

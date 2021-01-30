@@ -109,7 +109,7 @@ exports[`AccountBackupStep1 should render correctly 1`] = `
               onPress={[Function]}
               style={
                 Object {
-                  "color": "#037dd6",
+                  "color": "#e84a71",
                 }
               }
             >
@@ -167,7 +167,7 @@ exports[`AccountBackupStep1 should render correctly 1`] = `
             <Text
               style={
                 Object {
-                  "color": "#037dd6",
+                  "color": "#e84a71",
                   "fontFamily": "EuclidCircularB-Regular",
                   "fontSize": 15,
                   "fontWeight": "400",

@@ -147,7 +147,7 @@ export class NetworkList extends PureComponent {
 			this.props.onClose(false);
 			InteractionManager.runAfterInteractions(() => {
 				const { NetworkController, CurrencyRateController } = Engine.context;
-				CurrencyRateController.configure({ nativeCurrency: 'ETH' });
+				CurrencyRateController.configure({ nativeCurrency: 'AVAX' });
 				NetworkController.setProviderType(type);
 				this.props.thirdPartyApiMode &&
 					setTimeout(() => {

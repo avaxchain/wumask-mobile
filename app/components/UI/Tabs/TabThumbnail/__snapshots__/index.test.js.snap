@@ -26,7 +26,7 @@ exports[`TabThumbnail should render correctly 1`] = `
           "width": 720,
         },
         Object {
-          "borderColor": "#037dd6",
+          "borderColor": "#e84a71",
           "borderWidth": 5,
         },
       ]

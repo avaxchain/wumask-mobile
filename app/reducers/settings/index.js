@@ -3,7 +3,7 @@ import AppConstants from '../../core/AppConstants';
 
 const initialState = {
 	searchEngine: AppConstants.DEFAULT_SEARCH_ENGINE,
-	primaryCurrency: 'ETH',
+	primaryCurrency: 'AVAX',
 	lockTime: -1, // Disabled by default
 	paymentChannelsEnabled: false,
 	useBlockieIcon: true

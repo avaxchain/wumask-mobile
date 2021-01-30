@@ -158,7 +158,7 @@ class PaymentChannel extends PureComponent {
 		 */
 		contractExchangeRates: PropTypes.object,
 		/**
-		 * ETH-to-current currency conversion rate from CurrencyRateController
+		 * AVAX-to-current currency conversion rate from CurrencyRateController
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -194,7 +194,7 @@ class PaymentChannel extends PureComponent {
 		*/
 		showAlert: PropTypes.func,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string
 	};
@@ -499,7 +499,7 @@ class PaymentChannel extends PureComponent {
 		const noFundsAndNoHistory = this.state.balance === '0.00' && !this.state.transactions.length;
 		const noFunds = this.state.balance === '0.00';
 		let mainBalance, secondaryBalance;
-		if (this.props.primaryCurrency === 'ETH') {
+		if (this.props.primaryCurrency === 'AVAX') {
 			mainBalance = balance + ' ' + strings('unit.sai');
 			secondaryBalance = balanceFiat;
 		} else {

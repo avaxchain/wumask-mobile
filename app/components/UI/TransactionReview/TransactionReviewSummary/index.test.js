@@ -22,7 +22,7 @@ describe('TransactionReviewSummary', () => {
 					},
 					NetworkController: {
 						provider: {
-							ticker: 'ETH'
+							ticker: 'AVAX'
 						}
 					}
 				}

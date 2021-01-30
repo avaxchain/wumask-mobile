@@ -6,7 +6,7 @@ export default {
 		DEFAULT_GAS_LIMIT: '0x5208'
 	},
 	ASSET: {
-		ETH: 'ETH',
+		AVAX: 'AVAX',
 		ERC20: 'ERC20',
 		ERC721: 'ERC721'
 	},

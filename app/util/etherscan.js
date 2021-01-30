@@ -31,4 +31,8 @@ export function getEtherscanTransactionUrl(network, tx_hash) {
 export function getEtherscanBaseUrl(network) {
 	const subdomain = network.toLowerCase() === MAINNET ? '' : `${network.toLowerCase()}.`;
 	return `https://${subdomain}etherscan.io`;
+
+	export function getEtherscanBaseUrl(network) {
+		const subdomain = network.toLowerCase() === AVALANCHE ? '' : `${network.toLowerCase()}.`;
+		return `https://cchain.explorer.avax.network/`;
 }

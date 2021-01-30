@@ -33,7 +33,7 @@ class TransactionReviewFeeCard extends PureComponent {
 		 */
 		totalGasFiat: PropTypes.string,
 		/**
-		 * Total gas fee in ETH
+		 * Total gas fee in AVAX
 		 */
 		totalGasEth: PropTypes.string,
 		/**
@@ -45,15 +45,15 @@ class TransactionReviewFeeCard extends PureComponent {
 		 */
 		fiat: PropTypes.string,
 		/**
-		 * Total transaction value in ETH
+		 * Total transaction value in AVAX
 		 */
 		totalValue: PropTypes.object,
 		/**
-		 * Transaction value in ETH before gas fee
+		 * Transaction value in AVAX before gas fee
 		 */
 		transactionValue: PropTypes.string,
 		/**
-		 * ETH or fiat, dependent on user setting
+		 * AVAX or fiat, dependent on user setting
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -94,7 +94,7 @@ class TransactionReviewFeeCard extends PureComponent {
 		let networkFee;
 		let totalAmount;
 		let equivalentTotalAmount;
-		if (primaryCurrency === 'ETH') {
+		if (primaryCurrency === 'AVAX') {
 			amount = transactionValue;
 			networkFee = totalGasEth;
 			totalAmount = totalValue;

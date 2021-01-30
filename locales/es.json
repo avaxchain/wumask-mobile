@@ -57,8 +57,8 @@
 		},
 		"step1": {
 			"title": "Bienvenido a tu Nueva Billetera!",
-			"content1": "Para usar aplicaciones blockchain necesitas una billetera! Algunas aplicaciones blockchain tienen un costo en Ether (ETH).",
-			"content2": "Te mostraremos como comprar ETH o simplemente solicitar a un amigo."
+			"content1": "Para usar aplicaciones blockchain necesitas una billetera! Algunas aplicaciones blockchain tienen un costo en Ether (AVAX).",
+			"content2": "Te mostraremos como comprar AVAX o simplemente solicitar a un amigo."
 		},
 		"step2": {
 			"title": "Tus Cuentas",
@@ -425,7 +425,7 @@
 		"conversion_title": "Conversión de moneda",
 		"conversion_desc": "Mostrar valores en fiat usando una moneda específica en toda la aplicación.",
 		"primary_currency_title": "Moneda primaria",
-		"primary_currency_desc": "Seleccione nativo para priorizar la visualización de valores en la moneda nativa de la blockchain (por ejemplo, ETH). Seleccione Fiat para priorizar la visualización de valores en su moneda primaria seleccionada.",
+		"primary_currency_desc": "Seleccione nativo para priorizar la visualización de valores en la moneda nativa de la blockchain (por ejemplo, AVAX). Seleccione Fiat para priorizar la visualización de valores en su moneda primaria seleccionada.",
 		"primary_currency_text_first": "Nativo",
 		"primary_currency_text_second": "Fiat",
 		"language_desc": "Traducir la aplicacion a un lenguaje soportado diferente.",
@@ -576,7 +576,7 @@
 		"could_not_resolve_ens": "No se pudo resolver nombre ENS",
 		"asset": "Activo",
 		"balance": "Balance",
-		"not_enough_for_gas": "Tienes 0 ETH en tu cuenta para pagar por la tarifa de transacción. Compra ETH o deposítalo desde otra cuenta.",
+		"not_enough_for_gas": "Tienes 0 AVAX en tu cuenta para pagar por la tarifa de transacción. Compra AVAX o deposítalo desde otra cuenta.",
 		"send": "Enviar",
 		"confirmed": "Confirmada",
 		"pending": "Pendiente",
@@ -812,7 +812,7 @@
 		"balance": "Balance"
 	},
 	"unit": {
-		"eth": "ETH",
+		"eth": "AVAX",
 		"negative": "-",
 		"divisor": "/",
 		"token_id": "#"
@@ -1015,7 +1015,7 @@
 		"received_message": "Presiona para ver esta transacción",
 		"received_payment_message": "Has recibido {{amount}} DAI",
 		"prompt_title": "Habilitar Notificationes",
-		"prompt_desc": "Habilita las notificationes asi MetaMask puede avisarte cuando recibes ETH o cuando tus transacciones fueron confirmadas.",
+		"prompt_desc": "Habilita las notificationes asi MetaMask puede avisarte cuando recibes AVAX o cuando tus transacciones fueron confirmadas.",
 		"prompt_ok": "Si",
 		"prompt_cancel": "No, gracias"
 	},
@@ -1096,9 +1096,9 @@
 		"min_deposit": "Depósito Min.:",
 		"max_deposit": "Depósito Max.:",
 		"in_order_to_use": "Para empezar a utilizar los pagos instantáneos, ",
-		"you_need_to_deposit": "primero debes depositar algo de ETH",
-		"deposit_eth": "DEPOSITAR ETH",
-		"enter_eth_amount": "Ingresa el monto de ETH",
+		"you_need_to_deposit": "primero debes depositar algo de AVAX",
+		"deposit_eth": "DEPOSITAR AVAX",
+		"enter_eth_amount": "Ingresa el monto de AVAX",
 		"deposit": "DEPOSITAR",
 		"send_intro": "Envia pagos instantáneos de manera gratuita a cualquier otra dirección de Ethereum!",
 		"send_payment": "ENVIAR PAGO",
@@ -1108,7 +1108,7 @@
 		"receive": "RECIBIR",
 		"receive_intro": "Recibe pagos al compartir tu dirección o mostrando to código QR",
 		"withdraw_intro": "Tus fondos sera transferidos a tu cuenta de ethereum",
-		"withdraw_info": "Este proceso puede tardar algunos segundos ya que es una transacción de ETH normal.",
+		"withdraw_info": "Este proceso puede tardar algunos segundos ya que es una transacción de AVAX normal.",
 		"withdraw_note": "NOTA: las tarifas de la transacción serán pagas con tu saldo",
 		"withdraw": "RETIRAR",
 		"error": "Error",
@@ -1129,7 +1129,7 @@
 		"no_funds_title": "Sin Fondos",
 		"no_funds_action": "Depositar Fondos",
 		"withdraw_funds": "Retirar Fondos",
-		"no_funds_desc": "Deposita ETH en tu tarjeta InstaPay para empezar a hacer pagos instantáneos con DAI.",
+		"no_funds_desc": "Deposita AVAX en tu tarjeta InstaPay para empezar a hacer pagos instantáneos con DAI.",
 		"confirm": "Confirmar",
 		"cancel": "Cancelar",
 		"asset_card_desc": "Transacciones gratis con Connext Payment Channels.\n Esta es una funcionalidad beta. Para obtener ayuda, ícono de hamburguesa > Obtener ayuda",
@@ -1153,7 +1153,7 @@
 		"ask_a_friend": "O también puedes pedirle a un amigo",
 		"receive_funds_action": "Recibir Fondos",
 		"view_address": "Ver mi dirección",
-		"gas_error": "No tienes suficiente ETH para pagar el gas."
+		"gas_error": "No tienes suficiente AVAX para pagar el gas."
 	},
 	"webview_error": {
 		"title": "Ooops! algo salió mal...",
@@ -1181,7 +1181,7 @@
 		"depositing_to": "Depositando a:"
 	},
 	"fiat_on_ramp": {
-		"buy_eth": "Comprar ETH",
+		"buy_eth": "Comprar AVAX",
 		"purchased_currency": "Compra de {{currency}}",
 		"network_not_supported": "La red actual no esta soportada",
 		"switch_network": "Por favor cambiar a Mainnet",
@@ -1208,7 +1208,7 @@
 		"purchase_method_modal_close": "Cerrar",
 		"modal_transak_support": "Disponibilidad de Transak",
 		"modal_wyre_support": "Disponibilidad de Wyre",
-		"transak_cta": "Comprar ETH con Transak",
+		"transak_cta": "Comprar AVAX con Transak",
 		"transak_modal_text": "Métodos de pago y comisiones varían dependiendo de la ubicación. Países disponibles:",
 		"apple_pay": "Apple Pay",
 		"via": "vía",

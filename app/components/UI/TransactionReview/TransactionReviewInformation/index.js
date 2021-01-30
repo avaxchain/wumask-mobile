@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
 class TransactionReviewInformation extends PureComponent {
 	static propTypes = {
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -153,7 +153,7 @@ class TransactionReviewInformation extends PureComponent {
 		 */
 		fiatValue: PropTypes.string,
 		/**
-		 * ETH or fiat, depending on user setting
+		 * AVAX or fiat, depending on user setting
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -227,7 +227,7 @@ class TransactionReviewInformation extends PureComponent {
 		} = this.props;
 
 		const totals = {
-			ETH: () => {
+			AVAX: () => {
 				const totalEth = isBN(value) ? value.add(totalGas) : totalGas;
 				const totalFiat = (
 					<Text style={[styles.overviewEth, over && styles.over]}>

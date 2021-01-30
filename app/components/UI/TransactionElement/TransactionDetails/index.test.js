@@ -44,7 +44,7 @@ describe('TransactionDetails', () => {
 					renderValue: '2 TKN',
 					renderGas: '21000',
 					renderGasPrice: '2',
-					renderTotalValue: '2 TKN / 0.001 ETH',
+					renderTotalValue: '2 TKN / 0.001 AVAX',
 					renderTotalValueFiat: ''
 				}}
 			/>,

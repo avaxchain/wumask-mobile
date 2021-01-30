@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
 const ethLogo = require('../../../images/eth-logo.png'); // eslint-disable-line
 
 /**
- * Form component that allows users to type an amount of ETH and its fiat value is rendered dynamically
+ * Form component that allows users to type an amount of AVAX and its fiat value is rendered dynamically
  */
 class EthInput extends PureComponent {
 	static propTypes = {
@@ -139,7 +139,7 @@ class EthInput extends PureComponent {
 		 */
 		accounts: PropTypes.object,
 		/**
-		 * ETH-to-current currency conversion rate from CurrencyRateController
+		 * AVAX-to-current currency conversion rate from CurrencyRateController
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -199,7 +199,7 @@ class EthInput extends PureComponent {
 		 */
 		isOpen: PropTypes.bool,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string,
 		/**
@@ -252,7 +252,7 @@ class EthInput extends PureComponent {
 					assets: [
 						{
 							name: 'Ether',
-							symbol: 'ETH',
+							symbol: 'AVAX',
 							isETH: true
 						},
 						...this.props.tokens
@@ -265,7 +265,7 @@ class EthInput extends PureComponent {
 					assets: [
 						{
 							name: 'Ether',
-							symbol: 'ETH'
+							symbol: 'AVAX'
 						}
 					],
 					readableValue: processedReadableValue
@@ -319,14 +319,14 @@ class EthInput extends PureComponent {
 	/**
 	 * Depending on 'assetType' return element to be rendered in assets dropdown
 	 *
-	 * @param {object} asset - Asset to be rendered (ETH, ERC20 or ERC721)
+	 * @param {object} asset - Asset to be rendered (AVAX, ERC20 or ERC721)
 	 * @param {func} onPress - Callback called when object is pressed
 	 * @returns {object} - 'SelectableAsset' object with corresponding asset information
 	 */
 	renderAsset = (asset, onPress) => {
 		const { tokenBalances, accounts, selectedAddress, ticker } = this.props;
 		const assetsObject = {
-			ETH: () => {
+			AVAX: () => {
 				const subTitle = renderFromWei(accounts[selectedAddress].balance) + ' ' + getTicker(ticker);
 				const icon = <Image source={ethLogo} style={styles.logo} />;
 				return { title: getTicker(ticker), subTitle, icon };
@@ -352,7 +352,7 @@ class EthInput extends PureComponent {
 		};
 		let assetType;
 		if (asset.isETH) {
-			assetType = 'ETH';
+			assetType = 'AVAX';
 		} else if (asset.decimals) {
 			assetType = 'ERC20';
 		} else {
@@ -373,7 +373,7 @@ class EthInput extends PureComponent {
 			transaction: { selectedAsset, assetType }
 		} = this.props;
 		const assetsLists = {
-			ETH: () => assets.filter(asset => asset.symbol !== 'ETH'),
+			AVAX: () => assets.filter(asset => asset.symbol !== 'AVAX'),
 			ERC20: () => assets.filter(asset => asset.symbol !== selectedAsset.symbol),
 			ERC721: () => assets.filter(asset => asset.tokenId !== selectedAsset.tokenId)
 		};
@@ -413,10 +413,10 @@ class EthInput extends PureComponent {
 		let processedValue, processedReadableValue;
 		const decimal = isDecimal(readableValue);
 		if (decimal) {
-			// Only for ETH or ERC20, depending on 'primaryCurrency' selected
+			// Only for AVAX or ERC20, depending on 'primaryCurrency' selected
 			switch (assetType) {
-				case 'ETH':
-					if (internalPrimaryCurrency === 'ETH') {
+				case 'AVAX':
+					if (internalPrimaryCurrency === 'AVAX') {
 						processedValue = toWei(readableValue);
 						processedReadableValue = readableValue;
 					} else {
@@ -427,7 +427,7 @@ class EthInput extends PureComponent {
 				case 'ERC20': {
 					const exchangeRate =
 						selectedAsset && selectedAsset.address && contractExchangeRates[selectedAsset.address];
-					if (internalPrimaryCurrency !== 'ETH' && (exchangeRate && exchangeRate !== 0)) {
+					if (internalPrimaryCurrency !== 'AVAX' && (exchangeRate && exchangeRate !== 0)) {
 						processedValue = fiatNumberToTokenMinimalUnit(
 							readableValue,
 							conversionRate,
@@ -464,10 +464,10 @@ class EthInput extends PureComponent {
 		} = this.props;
 		const { internalPrimaryCurrency } = this.state;
 		let processedReadableValue;
-		// Only for ETH or ERC20, depending on 'primaryCurrency' selected
+		// Only for AVAX or ERC20, depending on 'primaryCurrency' selected
 		switch (assetType) {
-			case 'ETH':
-				if (internalPrimaryCurrency === 'ETH') {
+			case 'AVAX':
+				if (internalPrimaryCurrency === 'AVAX') {
 					processedReadableValue = renderFromWei(value);
 				} else {
 					processedReadableValue = weiToFiatNumber(value, conversionRate).toString();
@@ -476,7 +476,7 @@ class EthInput extends PureComponent {
 			case 'ERC20': {
 				const exchangeRate =
 					selectedAsset && selectedAsset.address && contractExchangeRates[selectedAsset.address];
-				if (internalPrimaryCurrency !== 'ETH' && (exchangeRate && exchangeRate !== 0)) {
+				if (internalPrimaryCurrency !== 'AVAX' && (exchangeRate && exchangeRate !== 0)) {
 					processedReadableValue = balanceToFiatNumber(value, conversionRate, exchangeRate).toString();
 				} else {
 					processedReadableValue = renderFromTokenMinimalUnit(value, selectedAsset.decimals);
@@ -498,7 +498,7 @@ class EthInput extends PureComponent {
 	};
 
 	/**
-	 * Returns object to be rendered as input field. Only for ETH and ERC20 tokens
+	 * Returns object to be rendered as input field. Only for AVAX and ERC20 tokens
 	 *
 	 * @param {object} image - Image object of the asset
 	 * @param {tsring} currency - String containing currency code
@@ -586,9 +586,9 @@ class EthInput extends PureComponent {
 
 		// Depending on 'assetType' return object with corresponding 'secondaryAmount', 'currency' and 'image'
 		const inputs = {
-			ETH: () => {
+			AVAX: () => {
 				let secondaryAmount, currency, secondaryCurrency;
-				if (internalPrimaryCurrency === 'ETH') {
+				if (internalPrimaryCurrency === 'AVAX') {
 					secondaryAmount = weiToFiatNumber(value, conversionRate).toString();
 					secondaryCurrency = currentCurrency;
 					currency = getTicker(ticker);
@@ -605,7 +605,7 @@ class EthInput extends PureComponent {
 					selectedAsset && selectedAsset.address && contractExchangeRates[selectedAsset.address];
 				let secondaryAmount, currency, secondaryCurrency;
 				if (exchangeRate && exchangeRate !== 0) {
-					if (internalPrimaryCurrency === 'ETH') {
+					if (internalPrimaryCurrency === 'AVAX') {
 						const finalValue = (value && fromTokenMinimalUnit(value, selectedAsset.decimals)) || 0;
 						secondaryAmount = balanceToFiatNumber(finalValue, conversionRate, exchangeRate).toString();
 						currency = selectedAsset.symbol;
@@ -618,7 +618,7 @@ class EthInput extends PureComponent {
 					}
 				} else {
 					currency =
-						internalPrimaryCurrency === 'ETH' ? selectedAsset.symbol : currentCurrency && currentCurrency;
+						internalPrimaryCurrency === 'AVAX' ? selectedAsset.symbol : currentCurrency && currentCurrency;
 				}
 
 				const image = <TokenImage asset={selectedAsset} containerStyle={styles.logo} iconStyle={styles.logo} />;
@@ -664,8 +664,8 @@ class EthInput extends PureComponent {
 	switchInternalPrimaryCurrency = secondaryAmount => {
 		const { internalPrimaryCurrency } = this.state;
 		const primarycurrencies = {
-			ETH: 'Fiat',
-			Fiat: 'ETH'
+			AVAX: 'Fiat',
+			Fiat: 'AVAX'
 		};
 		this.setState({
 			readableValue: secondaryAmount,

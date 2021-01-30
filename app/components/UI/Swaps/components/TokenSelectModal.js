@@ -112,7 +112,7 @@ function TokenSelectModal({
 			const itemAddress = toChecksumAddress(item.address);
 
 			let balance, balanceFiat;
-			if (item.symbol === 'ETH') {
+			if (item.symbol === 'AVAX') {
 				balance = renderFromWei(accounts[selectedAddress] && accounts[selectedAddress].balance);
 				balanceFiat = weiToFiat(hexToBN(accounts[selectedAddress].balance), conversionRate, currentCurrency);
 			} else {
@@ -205,7 +205,7 @@ TokenSelectModal.propTypes = {
 	onItemPress: PropTypes.func,
 	exclude: PropTypes.arrayOf(PropTypes.string),
 	/**
-	 * ETH to current currency conversion rate
+	 * AVAX to current currency conversion rate
 	 */
 	conversionRate: PropTypes.number,
 	/**

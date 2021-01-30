@@ -18,8 +18,8 @@ describe('ApproveTransactionModal', () => {
 					},
 					NetworkController: {
 						provider: {
-							ticker: 'ETH',
-							type: 'ETH'
+							ticker: 'AVAX',
+							type: 'AVAX'
 						}
 					},
 					AssetsController: {

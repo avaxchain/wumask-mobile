@@ -97,7 +97,7 @@ exports[`TransactionHeader should render correctly 1`] = `
         }
       }
     >
-      Ropsten
+      Avalanche
     </Text>
   </View>
 </View>

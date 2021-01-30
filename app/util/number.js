@@ -157,8 +157,8 @@ export function renderFiatAddition(transferFiat, feeFiat, currentCurrency, decim
  * Converts fiat number as human-readable fiat string to token miniml unit expressed as a BN
  *
  * @param {number|string} fiat - Fiat number
- * @param {number} conversionRate - ETH to current currency conversion rate
- * @param {number} exchangeRate - Asset to ETH conversion rate
+ * @param {number} conversionRate - AVAX to current currency conversion rate
+ * @param {number} exchangeRate - Asset to AVAX conversion rate
  * @param {number} decimals - Asset decimals
  * @returns {Object} - The converted balance as BN instance
  */
@@ -284,7 +284,7 @@ export function renderToGwei(value, unit = 'ether') {
  * Converts wei expressed as a BN instance into a human-readable fiat string
  *
  * @param {number} wei - BN corresponding to an amount of wei
- * @param {number} conversionRate - ETH to current currency conversion rate
+ * @param {number} conversionRate - AVAX to current currency conversion rate
  * @param {string} currencyCode - Current currency code to display
  * @returns {string} - Currency-formatted string
  */
@@ -328,7 +328,7 @@ export function addCurrencySymbol(amount, currencyCode) {
  * Converts wei expressed as a BN instance into a human-readable fiat string
  *
  * @param {number} wei - BN corresponding to an amount of wei
- * @param {number} conversionRate - ETH to current currency conversion rate
+ * @param {number} conversionRate - AVAX to current currency conversion rate
  * @param {Number} decimalsToShow - Decimals to 5
  * @returns {Number} - The converted balance
  */
@@ -358,7 +358,7 @@ export function handleWeiNumber(wei) {
  * Converts fiat number as human-readable fiat string to wei expressed as a BN
  *
  * @param {number|string} fiat - Fiat number
- * @param {number} conversionRate - ETH to current currency conversion rate
+ * @param {number} conversionRate - AVAX to current currency conversion rate
  * @returns {Object} - The converted balance as BN instance
  */
 export function fiatNumberToWei(fiat, conversionRate) {
@@ -375,8 +375,8 @@ export function fiatNumberToWei(fiat, conversionRate) {
  * Calculates fiat balance of an asset
  *
  * @param {number|string} balance - Number corresponding to a balance of an asset
- * @param {number} conversionRate - ETH to current currency conversion rate
- * @param {number} exchangeRate - Asset to ETH conversion rate
+ * @param {number} conversionRate - AVAX to current currency conversion rate
+ * @param {number} exchangeRate - Asset to AVAX conversion rate
  * @param {string} currencyCode - Current currency code to display
  * @returns {string} - Currency-formatted string
  */
@@ -392,8 +392,8 @@ export function balanceToFiat(balance, conversionRate, exchangeRate, currencyCod
  * Calculates fiat balance of an asset and returns a number
  *
  * @param {number|string} balance - Number or string corresponding to a balance of an asset
- * @param {number} conversionRate - ETH to current currency conversion rate
- * @param {number} exchangeRate - Asset to ETH conversion rate
+ * @param {number} conversionRate - AVAX to current currency conversion rate
+ * @param {number} exchangeRate - Asset to AVAX conversion rate
  * @param {number} decimalsToShow - Decimals to 5
  * @returns {Number} - The converted balance
  */

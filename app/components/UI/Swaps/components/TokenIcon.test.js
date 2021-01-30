@@ -6,7 +6,7 @@ describe('TokenIcon component', () => {
 	it('should Render correctly', () => {
 		const empty = shallow(<TokenIcon />);
 		expect(empty).toMatchSnapshot();
-		const eth = shallow(<TokenIcon symbol="ETH" />);
+		const eth = shallow(<TokenIcon symbol="AVAX" />);
 		expect(eth).toMatchSnapshot();
 		const symbol = shallow(<TokenIcon symbol="cDAI" />);
 		expect(symbol).toMatchSnapshot();
@@ -19,7 +19,7 @@ describe('TokenIcon component', () => {
 		expect(icon).toMatchSnapshot();
 		const emptyMedium = shallow(<TokenIcon medium />);
 		expect(emptyMedium).toMatchSnapshot();
-		const ethMedium = shallow(<TokenIcon medium symbol="ETH" />);
+		const ethMedium = shallow(<TokenIcon medium symbol="AVAX" />);
 		expect(ethMedium).toMatchSnapshot();
 		const symbolMedium = shallow(<TokenIcon medium symbol="cDAI" />);
 		expect(symbolMedium).toMatchSnapshot();

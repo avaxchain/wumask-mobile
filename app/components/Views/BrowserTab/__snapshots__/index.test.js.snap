@@ -186,7 +186,7 @@ exports[`Browser should render correctly 1`] = `
           <Text
             style={
               Object {
-                "color": "#037dd6",
+                "color": "#e84a71",
                 "fontFamily": "EuclidCircularB-Regular",
                 "fontSize": 14,
                 "fontWeight": "400",

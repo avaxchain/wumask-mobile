@@ -137,7 +137,7 @@ export default [
 	},
 	{
 		url: 'https://faucet.metamask.io/',
-		name: 'Metamask Ether Faucet (Ropsten)'
+		name: 'Metamask Ether Faucet (Avalanche)'
 	},
 	{
 		url: 'https://www.minds.com/',
@@ -168,8 +168,8 @@ export default [
 		name: 'Peepeth'
 	},
 	{
-		url: 'https://faucet.ropsten.be/',
-		name: 'Ropsten Ethereum Faucet'
+		url: 'https://faucet.avalanche.be/',
+		name: 'Avalanche Ethereum Faucet'
 	},
 	{
 		url: 'https://superrare.co/',

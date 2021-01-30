@@ -183,7 +183,7 @@ class Settings extends PureComponent {
 			{ value: 'Google', label: 'Google', key: 'Google' }
 		];
 		this.primaryCurrencyOptions = [
-			{ value: 'ETH', label: strings('app_settings.primary_currency_text_first'), key: 'Native' },
+			{ value: 'AVAX', label: strings('app_settings.primary_currency_text_first'), key: 'Native' },
 			{ value: 'Fiat', label: strings('app_settings.primary_currency_text_second'), key: 'Fiat' }
 		];
 	};
@@ -213,7 +213,7 @@ class Settings extends PureComponent {
 								<PickComponent
 									pick={this.selectPrimaryCurrency}
 									textFirst={strings('app_settings.primary_currency_text_first')}
-									valueFirst={'ETH'}
+									valueFirst={'AVAX'}
 									textSecond={strings('app_settings.primary_currency_text_second')}
 									valueSecond={'Fiat'}
 									selectedValue={primaryCurrency}

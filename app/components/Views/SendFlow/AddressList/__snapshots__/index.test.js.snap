@@ -31,7 +31,7 @@ exports[`AddressList should render correctly 1`] = `
         style={
           Array [
             Object {
-              "color": "#037dd6",
+              "color": "#e84a71",
               "fontFamily": "EuclidCircularB-Regular",
               "fontSize": 16,
               "fontWeight": "400",

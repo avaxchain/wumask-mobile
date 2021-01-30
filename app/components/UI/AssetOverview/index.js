@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
 const ethLogo = require('../../../images/eth-logo.png'); // eslint-disable-line
 
 /**
- * View that displays the information of a specific asset (Token or ETH)
+ * View that displays the information of a specific asset (Token or AVAX)
  * including the overview (Amount, Balance, Symbol, Logo)
  */
 class AssetOverview extends PureComponent {
@@ -75,7 +75,7 @@ class AssetOverview extends PureComponent {
 		 */
 		asset: PropTypes.object,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -103,7 +103,7 @@ class AssetOverview extends PureComponent {
 		 */
 		toggleReceiveModal: PropTypes.func,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string
 	};
@@ -163,7 +163,7 @@ class AssetOverview extends PureComponent {
 			balanceFiat = balanceToFiat(balance, conversionRate, exchangeRate, currentCurrency);
 		}
 		// choose balances depending on 'primaryCurrency'
-		if (primaryCurrency === 'ETH') {
+		if (primaryCurrency === 'AVAX') {
 			mainBalance = `${balance} ${symbol}`;
 			secondaryBalance = balanceFiat;
 		} else {

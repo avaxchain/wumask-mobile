@@ -53,7 +53,7 @@ exports[`Amount should render correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#037dd6",
+                "backgroundColor": "#e84a71",
                 "borderRadius": 100,
                 "flexDirection": "row",
                 "paddingHorizontal": 16,
@@ -112,7 +112,7 @@ exports[`Amount should render correctly 1`] = `
               style={
                 Object {
                   "alignSelf": "flex-end",
-                  "color": "#037dd6",
+                  "color": "#e84a71",
                   "fontFamily": "EuclidCircularB-Regular",
                   "fontSize": 12,
                   "fontWeight": "400",

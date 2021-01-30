@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import PaymentChannel from './';
 import configureMockStore from 'redux-mock-store';
-import { ROPSTEN } from '../../../constants/network';
+import { AVALANCHE } from '../../../constants/network';
 
 const mockStore = configureMockStore();
 
@@ -16,8 +16,8 @@ describe('PaymentChannel', () => {
 				backgroundState: {
 					NetworkController: {
 						provider: {
-							type: ROPSTEN,
-							ticker: 'ETH'
+							type: AVALANCHE,
+							ticker: 'AVAX'
 						}
 					},
 					TransactionController: {
@@ -26,7 +26,7 @@ describe('PaymentChannel', () => {
 					},
 					CurrencyRateController: {
 						currentCurrency: 'USD',
-						nativeCurrency: 'ETH',
+						nativeCurrency: 'AVAX',
 						conversionRate: 100
 					},
 					PreferencesController: {

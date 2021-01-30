@@ -77,8 +77,8 @@
 		},
 		"step1": {
 			"title": "Welcome to your new wallet!",
-			"content1": "To use the blockchain, you need a wallet! Some actions cost Ether (ETH).",
-			"content2": "We'll show you how to buy ETH, or you can request some from a friend."
+			"content1": "To use the blockchain, you need a wallet! Some actions cost Ether (AVAX).",
+			"content2": "We'll show you how to buy AVAX, or you can request some from a friend."
 		},
 		"step2": {
 			"title": "Your Accounts",
@@ -459,7 +459,7 @@
 		"conversion_title": "Currency conversion",
 		"conversion_desc": "Display fiat values in using a specific currency throughout the application.",
 		"primary_currency_title": "Primary Currency",
-		"primary_currency_desc": "Select Native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency.",
+		"primary_currency_desc": "Select Native to prioritize displaying values in the native currency of the chain (e.g. AVAX). Select Fiat to prioritize displaying values in your selected fiat currency.",
 		"primary_currency_text_first": "Native",
 		"primary_currency_text_second": "Fiat",
 		"language_desc": "Translate the application to a different supported language.",
@@ -588,7 +588,7 @@
 		"review_hex_data": "Hex data",
 		"insufficient": "Insufficient funds",
 		"insufficient_amount": "You need {{amount}} more {{tokenSymbol}} to complete this transaction.",
-		"buy_more_eth": "Buy more ETH",
+		"buy_more_eth": "Buy more AVAX",
 		"get_ether": "Get Ether for the {{networkName}} network.",
 		"insufficient_tokens": "Insufficient {{token}}",
 		"invalid_address": "Invalid address",
@@ -630,7 +630,7 @@
 		"could_not_resolve_ens": "Couldn't resolve ENS",
 		"asset": "Asset",
 		"balance": "Balance",
-		"not_enough_for_gas": "You have 0 ETH in your account to pay for transaction fees. Buy some ETH or deposit from another account.",
+		"not_enough_for_gas": "You have 0 AVAX in your account to pay for transaction fees. Buy some AVAX or deposit from another account.",
 		"send": "Send",
 		"confirmed": "Confirmed",
 		"pending": "Pending",
@@ -889,7 +889,7 @@
 		"balance": "Balance"
 	},
 	"unit": {
-		"eth": "ETH",
+		"eth": "AVAX",
 		"sai": "SAI",
 		"dai": "DAI",
 		"negative": "-",
@@ -1141,7 +1141,7 @@
 		"received_message": "Tap to view this transaction",
 		"received_payment_message": "You received {{amount}} DAI",
 		"prompt_title": "Enable Push Notifications",
-		"prompt_desc": "Enable notifications so MetaMask can let you know when you've received ETH or when your transactions have been confirmed.",
+		"prompt_desc": "Enable notifications so MetaMask can let you know when you've received AVAX or when your transactions have been confirmed.",
 		"prompt_ok": "Yes",
 		"prompt_cancel": "No, thanks",
 		"wc_connected_title": "Connected to {{title}}",
@@ -1230,9 +1230,9 @@
 		"min_deposit": "Min. deposit:",
 		"max_deposit": "Max. deposit:",
 		"in_order_to_use": "In order to start sending instant payments, ",
-		"you_need_to_deposit": "you first need to deposit some ETH",
-		"deposit_eth": "DEPOSIT ETH",
-		"enter_eth_amount": "Enter ETH amount",
+		"you_need_to_deposit": "you first need to deposit some AVAX",
+		"deposit_eth": "DEPOSIT AVAX",
+		"enter_eth_amount": "Enter AVAX amount",
 		"deposit": "DEPOSIT",
 		"send_intro": "Send instant payments completely free to any other Ethereum address!",
 		"send_payment": "SEND PAYMENT",
@@ -1242,7 +1242,7 @@
 		"receive": "RECEIVE",
 		"receive_intro": "Receive payments by sharing your address or showing your QR code",
 		"withdraw_intro": "Your funds will be sent to your normal Ethereum account",
-		"withdraw_info": "This process will take a few seconds because it's a normal ETH transaction",
+		"withdraw_info": "This process will take a few seconds because it's a normal AVAX transaction",
 		"withdraw_note": "NOTE: The transaction fees will be paid with your funds",
 		"withdraw": "WITHDRAW",
 		"error": "Error",
@@ -1263,7 +1263,7 @@
 		"no_funds_title": "No Funds",
 		"no_funds_action": "Deposit Funds",
 		"withdraw_funds": "Withdraw Funds",
-		"no_funds_desc": "Deposit ETH into your InstaPay card to start making instant free payments with DAI.",
+		"no_funds_desc": "Deposit AVAX into your InstaPay card to start making instant free payments with DAI.",
 		"confirm": "Confirm",
 		"cancel": "Cancel",
 		"asset_card_desc": "Free Transactions with Connext Payment Channels.\n This is a beta feature. For help, hamburger icon > Get Help",
@@ -1290,7 +1290,7 @@
 		"ask_a_friend": "Or you can also request from a friend",
 		"receive_funds_action": "Receive Funds",
 		"view_address": "View my address",
-		"gas_error": "You don't have enough ETH to pay for gas."
+		"gas_error": "You don't have enough AVAX to pay for gas."
 	},
 	"webview_error": {
 		"title": "Ooops! something went wrong...",
@@ -1318,7 +1318,7 @@
 		"depositing_to": "Depositing to:"
 	},
 	"fiat_on_ramp": {
-		"buy_eth": "Buy ETH",
+		"buy_eth": "Buy AVAX",
 		"purchased_currency": "Purchased {{currency}}",
 		"network_not_supported": "Current network not supported",
 		"switch_network": "Please switch to Mainnet",
@@ -1345,7 +1345,7 @@
 		"purchase_method_modal_close": "Close",
 		"modal_transak_support": "Transak Support",
 		"modal_wyre_support": "Wyre Support",
-		"transak_cta": "Buy ETH with Transak",
+		"transak_cta": "Buy AVAX with Transak",
 		"transak_modal_text": "Exact payment methods and fees vary depending on location. Supported countries are:",
 		"apple_pay": "Apple Pay",
 		"via": "via",

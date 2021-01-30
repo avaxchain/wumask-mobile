@@ -193,7 +193,7 @@ class Approval extends PureComponent {
 		} = this.props;
 		let { transaction } = this.props;
 		try {
-			if (assetType === 'ETH') {
+			if (assetType === 'AVAX') {
 				transaction = this.prepareTransaction(transaction);
 			} else {
 				transaction = this.prepareAssetTransaction(transaction, selectedAsset);

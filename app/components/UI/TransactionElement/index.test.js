@@ -16,14 +16,14 @@ describe('TransactionElement', () => {
 					},
 					NetworkController: {
 						provider: {
-							ticker: 'ETH',
+							ticker: 'AVAX',
 							type: 'mainnet'
 						}
 					}
 				}
 			},
 			settings: {
-				primaryCurrency: 'ETH'
+				primaryCurrency: 'AVAX'
 			}
 		};
 

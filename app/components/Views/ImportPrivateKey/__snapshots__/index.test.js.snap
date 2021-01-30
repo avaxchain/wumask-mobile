@@ -226,7 +226,7 @@ exports[`ImportPrivateKey should render correctly 1`] = `
             <Text
               style={
                 Object {
-                  "color": "#037dd6",
+                  "color": "#e84a71",
                   "fontSize": 14,
                 }
               }

@@ -561,7 +561,7 @@ exports[`SecuritySettings should render correctly 1`] = `
           trackColor={
             Object {
               "false": "#f2f3f4",
-              "true": "#037dd6",
+              "true": "#e84a71",
             }
           }
           value={true}
@@ -617,7 +617,7 @@ exports[`SecuritySettings should render correctly 1`] = `
           trackColor={
             Object {
               "false": "#f2f3f4",
-              "true": "#037dd6",
+              "true": "#e84a71",
             }
           }
           value={false}
@@ -672,7 +672,7 @@ exports[`SecuritySettings should render correctly 1`] = `
           trackColor={
             Object {
               "false": "#f2f3f4",
-              "true": "#037dd6",
+              "true": "#e84a71",
             }
           }
         />

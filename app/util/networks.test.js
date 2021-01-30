@@ -1,11 +1,11 @@
 import { isMainNet, getNetworkName, getAllNetworks, getNetworkTypeById } from './networks';
-import { MAINNET, ROPSTEN, GOERLI, RPC, KOVAN } from '../../app/constants/network';
+import { MAINNET, AVALANCHE, GOERLI, RPC, KOVAN } from '../../app/constants/network';
 
 describe('getAllNetworks', () => {
 	const allNetworks = getAllNetworks();
 	it('should get all networks', () => {
 		expect(allNetworks.includes(MAINNET)).toEqual(true);
-		expect(allNetworks.includes(ROPSTEN)).toEqual(true);
+		expect(allNetworks.includes(AVALANCHE)).toEqual(true);
 		expect(allNetworks.includes(GOERLI)).toEqual(true);
 	});
 	it('should exclude rpc', () => {
@@ -30,7 +30,7 @@ describe('isMainNet', () => {
 			isMainNet({
 				network: {
 					provider: {
-						type: ROPSTEN
+						type: AVALANCHE
 					}
 				}
 			})

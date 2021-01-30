@@ -226,7 +226,7 @@ exports[`CustomGas should render correctly 1`] = `
         >
           0
            
-          ETH
+          AVAX
         </Text>
         <Text
           style={
@@ -259,7 +259,7 @@ exports[`CustomGas should render correctly 1`] = `
             },
             Object {
               "backgroundColor": "#eaf6ff",
-              "borderColor": "#037dd6",
+              "borderColor": "#e84a71",
               "zIndex": 1,
             },
           ]
@@ -315,7 +315,7 @@ exports[`CustomGas should render correctly 1`] = `
         >
           0
            
-          ETH
+          AVAX
         </Text>
         <Text
           style={
@@ -404,7 +404,7 @@ exports[`CustomGas should render correctly 1`] = `
         >
           0
            
-          ETH
+          AVAX
         </Text>
         <Text
           style={
@@ -493,7 +493,7 @@ exports[`CustomGas should render correctly 1`] = `
         >
           0
            
-          ETH
+          AVAX
         </Text>
       </View>
     </View>

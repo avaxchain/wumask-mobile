@@ -7,7 +7,7 @@ describe('TokenSelectButton component', () => {
 		const dummyHandler = jest.fn();
 		const empty = shallow(<TokenSelectButton label="Select a token" />);
 		expect(empty).toMatchSnapshot();
-		const eth = shallow(<TokenSelectButton label="Select a token" symbol="ETH" />);
+		const eth = shallow(<TokenSelectButton label="Select a token" symbol="AVAX" />);
 		expect(eth).toMatchSnapshot();
 		const symbol = shallow(<TokenSelectButton label="Select a token" symbol="cDAI" />);
 		expect(symbol).toMatchSnapshot();

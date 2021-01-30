@@ -211,7 +211,7 @@ class Deposit extends PureComponent {
 		 */
 		currentCurrency: PropTypes.string,
 		/**
-		 * ETH-to-current currency conversion rate from CurrencyRateController
+		 * AVAX-to-current currency conversion rate from CurrencyRateController
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -223,7 +223,7 @@ class Deposit extends PureComponent {
 		 */
 		ticker: PropTypes.string,
 		/**
-		 * Primary currency, either ETH or Fiat
+		 * Primary currency, either AVAX or Fiat
 		 */
 		primaryCurrency: PropTypes.string
 	};
@@ -297,7 +297,7 @@ class Deposit extends PureComponent {
 		const pointAmount = amount.replace(',', '.');
 		const validDecimal = isDecimal(pointAmount);
 		if (validDecimal) {
-			if (primaryCurrency === 'ETH') {
+			if (primaryCurrency === 'AVAX') {
 				processedValue = toWei(pointAmount);
 			} else {
 				processedValue = fiatNumberToWei(pointAmount, conversionRate);
@@ -327,8 +327,8 @@ class Deposit extends PureComponent {
 		const depositAmountNumber = parseFloat(fromWei(value));
 		const { MAX_DEPOSIT_TOKEN, getExchangeRate } = PaymentChannelsClient;
 
-		const ETH = parseFloat(getExchangeRate());
-		const maxDepositAmount = (MAX_DEPOSIT_TOKEN / ETH).toFixed(2);
+		const AVAX = parseFloat(getExchangeRate());
+		const maxDepositAmount = (MAX_DEPOSIT_TOKEN / AVAX).toFixed(2);
 		const minDepositAmount = AppConstants.CONNEXT.MIN_DEPOSIT_ETH;
 
 		if (depositAmountNumber > maxDepositAmount) {
@@ -412,7 +412,7 @@ class Deposit extends PureComponent {
 		const { conversionRate, currentCurrency, ticker, primaryCurrency } = this.props;
 		const { amount, validAmount, error, value, qrModalVisible } = this.state;
 		let secondaryAmount, currency, secondaryCurrency;
-		if (primaryCurrency === 'ETH') {
+		if (primaryCurrency === 'AVAX') {
 			secondaryAmount = weiToFiatNumber(value, conversionRate).toString();
 			secondaryCurrency = currentCurrency;
 			currency = getTicker(ticker);

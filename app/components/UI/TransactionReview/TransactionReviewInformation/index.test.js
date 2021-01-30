@@ -22,7 +22,7 @@ describe('TransactionReviewInformation', () => {
 					},
 					NetworkController: {
 						provider: {
-							ticker: 'ETH'
+							ticker: 'AVAX'
 						}
 					}
 				}
@@ -38,7 +38,7 @@ describe('TransactionReviewInformation', () => {
 				assetType: undefined
 			},
 			settings: {
-				primaryCurrency: 'ETH'
+				primaryCurrency: 'AVAX'
 			}
 		};
 

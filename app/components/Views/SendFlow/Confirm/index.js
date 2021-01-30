@@ -249,7 +249,7 @@ class Confirm extends PureComponent {
 		 */
 		transaction: PropTypes.object.isRequired,
 		/**
-		 * ETH to current currency conversion rate
+		 * AVAX to current currency conversion rate
 		 */
 		conversionRate: PropTypes.number,
 		/**
@@ -297,7 +297,7 @@ class Confirm extends PureComponent {
 		 */
 		resetTransaction: PropTypes.func,
 		/**
-		 * ETH or fiat, depending on user setting
+		 * AVAX or fiat, depending on user setting
 		 */
 		primaryCurrency: PropTypes.string
 	};

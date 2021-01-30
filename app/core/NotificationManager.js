@@ -199,7 +199,7 @@ class NotificationManager {
 				this._removeListeners(transactionMeta.id);
 
 				const { TokenBalancesController, AssetsDetectionController, AccountTrackerController } = Engine.context;
-				// account balances for ETH txs
+				// account balances for AVAX txs
 				// Detect assets and tokens for ERC20 txs
 				// Detect assets for ERC721 txs
 				// right after a transaction was confirmed

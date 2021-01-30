@@ -24,7 +24,7 @@ describe('Approve', () => {
 					},
 					NetworkController: {
 						provider: {
-							ticker: 'ETH'
+							ticker: 'AVAX'
 						}
 					},
 					TransactionController: {

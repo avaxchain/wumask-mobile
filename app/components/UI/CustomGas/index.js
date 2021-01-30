@@ -211,7 +211,7 @@ class CustomGas extends PureComponent {
 		 */
 		accounts: PropTypes.object,
 		/**
-		/* conversion rate of ETH - FIAT
+		/* conversion rate of AVAX - FIAT
 		*/
 		conversionRate: PropTypes.any,
 		/**
@@ -310,9 +310,9 @@ class CustomGas extends PureComponent {
 		const { gas, gasPrice, toggleAdvancedCustomGas } = this.props;
 		const warningSufficientFunds = this.hasSufficientFunds(gas, gasPrice);
 		const { ticker } = this.props;
-		if (ticker && ticker !== 'ETH') toggleAdvancedCustomGas(true);
+		if (ticker && ticker !== 'AVAX') toggleAdvancedCustomGas(true);
 		//Applies ISF error if present before any gas modifications
-		this.setState({ warningSufficientFunds, advancedCustomGas: ticker && ticker !== 'ETH' });
+		this.setState({ warningSufficientFunds, advancedCustomGas: ticker && ticker !== 'AVAX' });
 	};
 
 	componentDidUpdate = prevProps => {
